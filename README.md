@@ -52,7 +52,7 @@ YOU HAVE BEEN WARNED!**
 
 **NOTE: DON'T MINIMIZE THE WINDOW UNTIL THE EDAT GENERATION PROCESS BEGINS!
 THE SCRIPT HAS AUTOMATIC KEYSTROKES UNTIL THE PROGRAM BEGINS TO ENCRYPT THE FILES TO EDAT!
-YOU HAVE BEEN WARNED!
+YOU HAVE BEEN WARNED!**
 
 5. When asked if you want to decompress the AR files, choose either Yes (Y) or No (N)
 6. Your decrypted files are located in #output\DecryptedFiles\
