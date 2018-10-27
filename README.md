@@ -8,11 +8,11 @@ This tool can do the following:
 
 NOTE: Users with HAN (PS3 Xploit V3) will need to resign the PKG file.
 
-\\\\\\\\\\\\\\\\\\\
-HOW TO USE:
+
+### HOW TO USE:
 
 -------------------------------------------------
-\\\GENERATE MOD FOR THE PSN VERSION OF THE GAME\\\
+GENERATE MOD FOR THE PSN VERSION OF THE GAME
 1 - Place your mod files into the "#files" folder
 2 - Run "PS3ModToolbox.bat"
 3 - Select the first option and press ENTER
@@ -28,7 +28,7 @@ its name if you want. You can also close the EDAT Rebuilder window
 once the process finishes.
 
 -------------------------------------------------
-\\\ENCRYPT FILES TO EDAT\\\
+ENCRYPT FILES TO EDAT
 1 - Place your mod files into the "#files" folder
 2 - Run "PS3ModToolbox.bat"
 3 - Select the first option and press ENTER
@@ -40,7 +40,7 @@ YOU HAVE BEEN WARNED!
 6 - Your encrypted files are located in #output\EncryptedModFiles\
 
 -------------------------------------------------
-\\\DECRYPT FROM EDAT\\\
+DECRYPT FROM EDAT
 1 - Place your files into the "#files" folder
 2 - Run "PS3ModToolbox.bat"
 3 - Select the second option and press ENTER
@@ -53,34 +53,13 @@ YOU HAVE BEEN WARNED!
 NOTE: If selected, the decompressed files will be located in #output\DecryptedFiles\decompressed
 
 -------------------------------------------------
-\\\DECOMPRESS AR FILES\\\
+DECOMPRESS AR FILES
 1 - Place your files into the "#files" folder
 2 - Run "PS3ModToolbox.bat"
 3 - Select the third option and press ENTER
 4 - Wait until the process finishes
 5 - Your decompressed files are located in #output\DecompressedFiles\
 
--------------------------------------------------
--------------------------------------------------
--------------------------------------------------
-NEW (1.2.1):
-- Fixed an issue that prevented US edats from being decrypted
-
-(1.2):
-- Added a menu to select the options
-- Fixed a bug in the US decrypting script
-
-
-
-(1.1):
-- Fixed bad CID for the US version
-- Added the ability to decrypt and decompress edat/ar files
-- Auto detection of what type of files are in the #files folder (ar or edat)
-- Encrypted EDATS will be available in the #output folder, regardless of wheter you create a pkg
-- A prompt asks you if you want to create a package (PKG) file
-
--------------------------------------------------
--------------------------------------------------
 -------------------------------------------------
 
 CREDITS:
