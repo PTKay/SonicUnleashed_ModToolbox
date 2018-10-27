@@ -1,0 +1,32 @@
+\\\\
+CID AND DEVKLICs FOR SONIC UNLEASHED
+------------------------------------------
+
+EUROPE PSN (NPEB01347)
+-----
+DevKlic: 680B34143C511F51002C26F977CA3EE3
+CID: EP0177-NPEB01347_00-SONICUNLEASHED01
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+US PSN (NPUB31204)
+-----
+DevKlic: 680B34143C511F51002C26F977CA3EE3
+CID: UP0177-NPUB31204_00-SONICUNLEASHED01
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+EUROPE DISC PATCH (BLES00425)
+-----
+DevKlic: 2CFA4DBA0FAF63E2E35CCD929C71826D
+CID: EP0177-BLES00425_00-SONICEUPATCH0000
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+US DISC PATCH (BLUS30244)
+-----
+DevKlic: 2CFA4DBA0FAF63E2E35CCD929C71826D
+CID: UP0177-BLUS30244_00-SONICUSPATCH0000

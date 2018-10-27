@@ -1,0 +1,69 @@
+TrueAncestor EDAT Rebuilder
+
+v1.65
+1. Add devklic auto-seeking in batch mode.
+2. Add pause in all file lists.
+3. Fix crash issue in add DevKlic.
+4. Update instructions.
+
+v1.60
+1. Add toolkit section & devklic seeking function.
+2. Add devklic auto-seeking at decrypting/rebuiding.
+
+v1.50
+1. Remove all the restricts in program.
+2. Change JRE check warning display.
+3. Add dev_klics.txt to tool folder.
+
+v1.45c
+1. Fix some silly issues.
+2. To launch the c version, please run rebuilder-c.exe. 
+
+v1.45b
+1. Batch mode and compress support is opened to public.
+2. Klic Bruteforcer is updated to v2.1.
+
+v1.45
+1. Fix bug in rebuilding edat version 1 files.
+
+v1.42
+1. Batch mode is disabled in public release.
+2. Compressed EDAT support is disabled in public release.
+
+v1.41 Internal Release
+1. Support rebuilding non-compressed zero content edat files.
+
+v1.40 Internal Release
+1. Fix bug in rebuild process.
+
+v1.35 Internal Release
+1. Use flatz' rap2rifkey.exe to get rifkey now.
+
+v1.31 Internal Release 
+1. Fix file missing when failing to rebuild files. 
+
+v1.30 Internal Release
+1. Change rebuilding method.
+2. Support rebuilding compressed edat files.
+3. Add generate unlock edat function.
+4. Add backup files switch, default is off.
+5. Add skip java check.
+
+v1.25
+1. Add subfolder traversal in edat/sdat folder.
+2. Fix 2G+ file handling issue (probably).
+3. Fix syntax issue while handling certian edat files.
+4. Re-adjust the mainmenu.
+
+v1.2
+1. Add SDAT file supporting.
+
+v1.1
+1. Fix Java OutOfMemory for encrypting big files.
+2. Add JVM Memory config in tool\core.cfg.
+
+v1.0 Features:
+1. Decrypt and encrypt edat files on pc.
+2. Fast rebuild mode.
+3. Batch mode.
+4. Dev Klic should be input manually at now. 
