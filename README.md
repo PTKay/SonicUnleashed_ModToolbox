@@ -67,7 +67,7 @@ YOU HAVE BEEN WARNED!**
 5. Your decompressed files are located in #output\DecompressedFiles\
 
 -------------------------------------------------
-#### CREDITS:
+### CREDITS:
 - ar0pack by Skyth
 - QuickBMS by Luigi Auriemma
 - EDAT Rebuilder by True Ancestor
