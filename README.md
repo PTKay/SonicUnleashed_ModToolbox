@@ -68,9 +68,8 @@ YOU HAVE BEEN WARNED!**
 
 -------------------------------------------------
 ### CREDITS:
-*- ar0pack by Skyth
+- ar0pack by Skyth
 - QuickBMS by Luigi Auriemma
 - EDAT Rebuilder by True Ancestor
 - Disc Patch keys provided by Slash
 - Script and PSN Keys by PTKickass
-*
