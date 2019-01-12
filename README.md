@@ -1,9 +1,11 @@
-SONIC UNLEASHED PS3 MOD TOOLBOX
+SONIC UNLEASHED MOD TOOLBOX
 ------------------------------
 This tool can do the following:
+#### PS3 ONLY
 - Converts mods into a PKG file for instalation in the PSN version of the game;
 - Encrypts files to EDAT;
 - Decrypts files from EDAT;
+#### XBOX 360 AND PS3
 - Decompresses AR files.
 
 NOTE: Users with HAN (PS3 Xploit V3) will need to resign the PKG file.
@@ -63,8 +65,9 @@ YOU HAVE BEEN WARNED!**
 1. Place your files into the "#files" folder
 2. Run "PS3ModToolbox.bat"
 3. Select the third option and press ENTER
-4. Wait until the process finishes
-5. Your decompressed files are located in #output\DecompressedFiles\
+4. Select your platform (XBOX 360 or PS3) and press ENTER
+5. Wait until the process finishes
+6. Your decompressed files are located in #output\DecompressedFiles\
 
 -------------------------------------------------
 ### CREDITS:
