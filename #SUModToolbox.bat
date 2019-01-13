@@ -1,7 +1,7 @@
 @echo off
 cls
 cd /d "%~dp0"
-title Sonic Unleashed Mod Toolbox 1.3
+title Sonic Unleashed Mod Toolbox 1.4b
 set is_empty=true
 set is_edat=false
 for %%f in (#files\*.*) do (
@@ -30,13 +30,15 @@ echo ---------------------
 echo 1 - Encrypt to EDAT (PS3 ONLY)
 echo 2 - Decrypt from EDAT (PS3 ONLY)
 echo 3 - Decompress AR
+echo 4 - Extract AR
 echo.
 set /p option=Type the number of the mode you want to use and press ENTER:
 if "%option%" EQU "" goto begg
-if /i %option% NEQ 1 if %option% NEQ 2 if /i %option% NEQ 3 goto begg
+if /i %option% NEQ 1 if %option% NEQ 2 if /i %option% NEQ 3 if /i %option% NEQ 4 goto begg
 if %option% EQU 1 (goto begin)
 if %option% EQU 2 (goto decrypt)
 if %option% EQU 3 (goto decompressar)
+if %option% EQU 4 (goto extractarfile)
 
 
 :begin
@@ -332,6 +334,92 @@ echo Done!
 echo You may now close this window.
 echo.
 echo Your decompressed files are in #output\DecompressedFiles\
+echo Press any key to close this window.
+pause >nul
+exit
+
+:extractarfile
+cls
+echo EXTRACT
+echo.
+echo SELECT OPTION
+echo NOTE: Type "b" to go back to the main menu
+echo ---------------------
+echo Decompress or only extract?
+echo 1 - Decompress and Extract
+echo 2 - Extract only (be sure to decompress first)
+echo.
+set /p opar=Type the number of your platform and press ENTER:
+if "%opar%" EQU "" goto extractarfile
+if /i %opar% NEQ 1 if %opar% NEQ 2 if /i %opar% NEQ b goto extractarfile
+if %opar% EQU 1 (goto decandextar_menu)
+if %opar% EQU 2 (goto begin_extar)
+if /i %opar% EQU b (goto begg)
+
+
+:decandextar_menu
+cls
+echo DECOMPRESS and EXTRACT
+echo.
+echo SELECT VERSION
+echo NOTE: Type "b" to go back to the previous menu
+echo ---------------------
+echo XBOX 360 or PS3?
+echo 1 - PS3
+echo 2 - XBOX 360
+echo.
+set /p platform_e=Type the number of your platform and press ENTER:
+if "%platform_e%" EQU "" goto decandextar_menu
+if /i %platform_e% NEQ 1 if %platform_e% NEQ 2 if /i %platform_e% NEQ b goto decandextar_menu
+if %platform_e% EQU 1 (set platf=arcsys)
+if %platform_e% EQU 2 (set platf=X360files)
+if /i %platform_e% EQU b (goto extractarfile)
+
+
+:begin_extar
+rd /S /Q #output\DecompressedFiles\
+md #output\DecompressedFiles\
+xcopy /s /q /y #files #output\DecompressedFiles\
+if /i (%opar% EQU 2) goto extar
+
+:decandextar
+md #output\DecompressedFiles\out
+setlocal enabledelayedexpansion
+for %%d in (#output\DecompressedFiles\*.ar.00) do (
+echo Extracting AR file for decompression...
+artools\quickbms.exe -Q artools\%platf%.bms "%%d" #output\DecompressedFiles\out >nul
+set filename=%%~nxd
+set noar=!filename:.ar.00=!
+for /d %%f in (#output\DecompressedFiles\out\*) do (
+ren %%f !noar!
+echo Decompressing AR...
+artools\ar0pack #output\DecompressedFiles\out\!noar!
+rd /S /Q #output\DecompressedFiles\out\!noar!
+)
+)
+xcopy /s /q /y #output\DecompressedFiles\out #output\DecompressedFiles\
+rd /S /Q #output\DecompressedFiles\out\
+
+:extar
+xcopy /s /q /y #output\DecompressedFiles #output\ExtractedFiles\
+rd /S /Q #output\DecompressedFiles\
+md #output\ExtractedFiles\
+setlocal enabledelayedexpansion
+for %%d in (#output\ExtractedFiles\*.ar.00) do (
+echo Extracting AR files...
+artools\ar0unpack.exe "%%d" >nul
+set filename=%%~nxd
+set noar=!filename:.ar.00=!
+del %%d
+)
+for %%d in (#output\ExtractedFiles\*.arl) do (del %%d)
+
+echo.
+echo -------------------------------------
+echo Done!
+echo You may now close this window.
+echo.
+echo Your extracted files are in #output\ExtractedFiles\
 echo Press any key to close this window.
 pause >nul
 exit
