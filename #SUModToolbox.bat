@@ -29,17 +29,18 @@ echo SELECT OPTION
 echo ---------------------
 echo 1 - Encrypt to EDAT (PS3 ONLY)
 echo 2 - Decrypt from EDAT (PS3 ONLY)
-echo 3 - Decompress AR
-echo 4 - Extract AR
+echo 3 - Decompress AR file
+echo 4 - Extract AR file
+echo 5 - Pack AR file
 echo.
 set /p option=Type the number of the mode you want to use and press ENTER:
 if "%option%" EQU "" goto begg
-if /i %option% NEQ 1 if %option% NEQ 2 if /i %option% NEQ 3 if /i %option% NEQ 4 goto begg
+if /i %option% NEQ 1 if %option% NEQ 2 if /i %option% NEQ 3 if /i %option% NEQ 4 if /i %option% NEQ 5 goto begg
 if %option% EQU 1 (goto begin)
 if %option% EQU 2 (goto decrypt)
 if %option% EQU 3 (goto decompressar)
 if %option% EQU 4 (goto extractarfile)
-
+if %option% EQU 5 (goto packar)
 
 :begin
 cls
@@ -420,6 +421,24 @@ echo Done!
 echo You may now close this window.
 echo.
 echo Your extracted files are in #output\ExtractedFiles\
+echo Press any key to close this window.
+pause >nul
+exit
+
+:packar
+rd /S /Q #output\PackedARFile\
+md #output\PackedARFile\
+xcopy /s /q /y #files #output\PackedARFile\file\
+artools\ar0pack #output\PackedARFile\file
+rd /S /Q #output\PackedARFile\file
+xcopy /s /q /y #output\PackedARFile\file #output\PackedARFile\
+
+echo.
+echo -------------------------------------
+echo Done!
+echo You may now close this window.
+echo.
+echo Your packed file is located in #output\PackedARFile\
 echo Press any key to close this window.
 pause >nul
 exit
