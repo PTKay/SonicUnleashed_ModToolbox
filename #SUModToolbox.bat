@@ -1,7 +1,7 @@
 @echo off
 cls
 cd /d "%~dp0"
-title Sonic Unleashed Mod Toolbox 1.4b
+title Sonic Unleashed Mod Toolbox 1.4
 set is_empty=true
 set is_edat=false
 for %%f in (#files\*.*) do (
