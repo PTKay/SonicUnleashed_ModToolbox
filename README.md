@@ -6,7 +6,9 @@ This tool can do the following:
 - Encrypts files to EDAT;
 - Decrypts files from EDAT;
 #### XBOX 360 AND PS3
-- Decompresses AR files.
+- Decompresses AR files;
+- Extracts AR files;
+- Packs AR files.
 
 NOTE: Users with HAN (PS3 Xploit V3) will need to resign the PKG file.
 
@@ -70,8 +72,28 @@ YOU HAVE BEEN WARNED!**
 6. Your decompressed files are located in #output\DecompressedFiles\
 
 -------------------------------------------------
+#### EXTRACTING AR FILES
+1. Place your files into the "#files" folder
+2.  Run "PS3ModToolbox.bat"
+3.  Select the fourth (4) option and press ENTER
+4.  Select if you want to either decompress and extract, or just extract.
+Your AR files need to be decompressed for extraction, so if you didn't do it beforehand, choose the
+first (1) option, and press ENTER.
+5.  If you chose to decompress aswell, select your platform (XBOX 360 or PS3) and press ENTER
+6.  Wait until the process finishes
+7.  Your decompressed files will be located in #output\ExtractedFiles\
+
+-------------------------------------------------
+#### PACKING AR FILES
+1.  Place your files into the "#files" folder
+2.  Run "PS3ModToolbox.bat"
+3.  Select the fifth (5) option and press ENTER
+4.  Wait until the process finishes
+5.  Your packed file will be located in #output\PackedARFile\file.ar.00
+
+-------------------------------------------------
 ### CREDITS:
-- ar0pack by Skyth
+- ar0pack and ar0unpack by Skyth
 - QuickBMS by Luigi Auriemma
 - EDAT Rebuilder by True Ancestor
 - Disc Patch keys provided by Slash
