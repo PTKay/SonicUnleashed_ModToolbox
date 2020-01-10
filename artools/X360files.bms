@@ -13,8 +13,9 @@ if Identifier == 0x0FF512ED     # XCOMPRESS_FILE_IDENTIFIER_LZXTDECODE
     get SIZE asize
     get NAME basename
     get EXT extension
-    string NAME += "_unpack."
-    string NAME += EXT
+    # string NAME += "_unpack."
+    string NAME += "."
+	string NAME += EXT
     comtype XMemDecompress
     clog NAME 0 SIZE SIZE
     cleanexit
