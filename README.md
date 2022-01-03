@@ -18,7 +18,7 @@ NOTE: Users with HAN (PS3 Xploit V3) will need to resign the PKG file.
 -------------------------------------------------
 #### GENERATE MOD FOR THE PSN VERSION OF THE GAME
 1. Place your mod files into the "#files" folder
-2. Run "PS3ModToolbox.bat"
+2. Run "#SUModToolbox.bat"
 3. Select the first option and press ENTER
 4. Select the region of your game and press ENTER.
 
@@ -36,7 +36,7 @@ once the process finishes.
 -------------------------------------------------
 #### ENCRYPT FILES TO EDAT
 1. Place your mod files into the "#files" folder
-2.  Run "PS3ModToolbox.bat"
+2.  Run "#SUModToolbox.bat"
 3.  Select the first option and press ENTER
 4.  Select the region of your game and press ENTER.
 
@@ -50,7 +50,7 @@ YOU HAVE BEEN WARNED!**
 -------------------------------------------------
 #### DECRYPT FROM EDAT
 1. Place your files into the "#files" folder
-2. Run "PS3ModToolbox.bat"
+2. Run "#SUModToolbox.bat"
 3. Select the second option and press ENTER
 4. Select the region of your game and press ENTER.
 
@@ -65,7 +65,7 @@ YOU HAVE BEEN WARNED!**
 -------------------------------------------------
 #### DECOMPRESS AR FILES
 1. Place your files into the "#files" folder
-2. Run "PS3ModToolbox.bat"
+2. Run "#SUModToolbox.bat"
 3. Select the third option and press ENTER
 4. Select your platform (XBOX 360 or PS3) and press ENTER
 5. Wait until the process finishes
@@ -74,7 +74,7 @@ YOU HAVE BEEN WARNED!**
 -------------------------------------------------
 #### EXTRACTING AR FILES
 1. Place your files into the "#files" folder
-2.  Run "PS3ModToolbox.bat"
+2.  Run "#SUModToolbox.bat"
 3.  Select the fourth (4) option and press ENTER
 4.  Select if you want to either decompress and extract, or just extract.
 Your AR files need to be decompressed for extraction, so if you didn't do it beforehand, choose the
@@ -86,7 +86,7 @@ first (1) option, and press ENTER.
 -------------------------------------------------
 #### PACKING AR FILES
 1.  Place your files into the "#files" folder
-2.  Run "PS3ModToolbox.bat"
+2.  Run "#SUModToolbox.bat"
 3.  Select the fifth (5) option and press ENTER
 4.  Wait until the process finishes
 5.  Your packed file will be located in #output\PackedARFile\file.ar.00
